@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const HollowCylindrical: React.FC = () => {
-    const tex = useTexture("./image.png");
+    const tex = useTexture("./image1.png");
 
     // Adjust texture settings
     tex.anisotropy = 20; // Increase anisotropy for better texture quality at angles
@@ -15,7 +15,7 @@ const HollowCylindrical: React.FC = () => {
 
     useFrame(() => {
         if (hollowCylindrical.current) {
-            // hollowCylindrical.current.rotation.y += 0.02; // Uncomment if you want to animate rotation
+            hollowCylindrical.current.rotation.y += 0.01; // Uncomment if you want to animate rotation
         }
     });
 

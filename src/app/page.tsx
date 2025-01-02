@@ -1,5 +1,45 @@
 "use client"
 
+// import HollowCylindrical from '@/components/hollowCylindrical'
+// import { Canvas } from '@react-three/fiber'
+// import React from 'react'
+
+// const page = () => {
+//   return (
+//     <Canvas flat camera={{ fov: 60 }}  className='relative bottom-16'>
+//       <ambientLight />
+//       <HollowCylindrical />
+//     </Canvas>
+//   )
+// }
+
+// export default page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { Canvas } from '@react-three/fiber';
 import React from 'react';
 import { OrbitControls, useTexture } from '@react-three/drei';
@@ -23,7 +63,7 @@ const page = () => {
 
       {/* CYLINDER */}
 
-      <Canvas flat camera={{ fov: 60 }} frameloop="demand" className='relative bottom-16'>
+      <Canvas flat camera={{ fov: 60 }}  className='relative bottom-16'>
   <OrbitControls />
   <ambientLight />
 
